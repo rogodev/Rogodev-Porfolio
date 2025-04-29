@@ -40,7 +40,7 @@ body{
     background-color: var(--main-bg-color);
 }
 header{
-    height: 75vh;
+    height: 90vh;
 }
 main{
     position: relative;
@@ -80,6 +80,9 @@ main{
 .width-55-percent{
     width: 55%;
 }
+.width-100-percent{
+    width: 100%;
+}
 .margin-top-100{
     margin-top: 100px;
 }
@@ -94,6 +97,15 @@ main{
 }
 .padding-30{
     padding: 30px;
+}
+.padding-100{
+    padding: 100px;
+}
+.padding-bottom-100{
+    padding-bottom: 100px;
+}
+.padding-top-100{
+    padding-top: 100px;
 }
 .gap-20{
     gap: 20px;
@@ -119,18 +131,19 @@ main{
 .active{
     width: 4rem;
     background-color: var(--main-font-color);
-    transition: linear 0.1s;
 }
 .inactive{
     width: 2rem;
     background-color: var(--nav-indicator-inactive);
-    transition: linear 0.1s;
 }
 .margin-16{
     margin: 0 16px 0 0;
 }
 .margin-bottom-150{
     margin-bottom: 150px;
+}
+.margin-bottom-100{
+    margin-bottom: 100px;
 }
 .font-size-12{
     font-size: 12px;
@@ -186,7 +199,7 @@ font-size: 16px;
     height: 25vh;
 }
 .header-info p{
-    max-width: 40%;
+    max-width: 70%;
     text-wrap: wrap;
     color: var(--second-font-color);
 }
@@ -198,6 +211,11 @@ font-size: 16px;
 }
 .nav-indicator{
     height: 1px;
+    transition: linear 0.07s;
+}
+.header-nav-element:hover a .nav-indicator{
+    width: 4rem;
+    background-color: var(--main-font-color);
 }
 .header-nav-element{
     width: fit-content;
@@ -215,7 +233,13 @@ font-size: 16px;
     color: var(--second-font-color);
 }
 
-
+.footer{
+    max-width: 75%;
+    text-wrap: wrap;
+}
+.footer b{
+    color: var(--main-font-color);
+}
 
 /*EXPERIENCE SECTION*/
 .experience-card,.project-card{
